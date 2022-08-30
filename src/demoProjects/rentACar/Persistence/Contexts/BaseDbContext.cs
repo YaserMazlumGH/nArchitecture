@@ -31,9 +31,8 @@ namespace Persistence.Contexts
                 a.Property(p => p.Name).HasColumnName("Name");
             });
 
-            Brand[] brandSeedDataSeeds = { new(1, "Mercedes"), new(2, "BMW") };
-            modelBuilder.Entity<Brand>().HasData(brandSeedDataSeeds);
-
+            Brand[] brandDataSeeds = { new(1, "Mercedes"), new(2, "BMW") };
+            modelBuilder.Entity<Brand>().HasData(brandDataSeeds);
            
         }
     }
